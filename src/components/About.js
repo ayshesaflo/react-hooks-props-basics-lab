@@ -1,12 +1,13 @@
 import React from "react";
 
-function About() {
+function About(props) {
   return (
     <div id="about">
       <h2>About Me</h2>
-      <p>Put the bio in here</p>
+      <p>{props.myBio}</p>
       <img src="https://i.imgur.com/mV8PQxj.gif" alt="I made this" />
-      {/* add your <Links /> component here */}
+      <a href = {props.myGithubLink}>{props.myGithubLink}</a>
+      <a href= {props.myLinkedinLink}>{props.myLinkedinLink}</a>
     </div>
   );
 }
